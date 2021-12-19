@@ -1,14 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-</head>
-<body>
-    <div class="container">
-        <div class="current-info"></div>
+  <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-dark br-primary mb-3">
+        <div class="container">
+            <a href="#" class = "navbar-title">Weather Dashboard</a>
+        </div>
+    </nav>
+    <div class="container searchContainer">
+        <div class="search card card-body">
+            <h1>Search for a city</h1>
+            <p class="lead">Enter a location</p>
+            <input type="text" id = "userSearch" class = "form-control" placeholder="Location">
+        </div>
+        <br>
+        <div id="profile"></div>
     </div>
-</body>
+    <div class="container text-center mt-2">
+        <button class="btn btn-primary" id = "submit">Submit</button>
+    </div>
+    <div id="content">
+
+    </div>
+    <div id="5dayForecast" class = ""></div>
+       
+  </body>
+  <script src="./assets/js/fetch.js"></script>
+  <script src="./assets/js/ui.js"></script>
+  <script src="./assets/js/app.js"></script>
 </html>
