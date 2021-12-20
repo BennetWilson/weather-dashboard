@@ -10,6 +10,6 @@ button.addEventListener("click", () => {
 
     ft.getCurrent(currentVal).then((data) => {
         ui.populateUI(data);
-        ui.saveToLs(data);
+        // ui.saveToLs(data);
     });
 });
