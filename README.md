@@ -15,9 +15,9 @@ I found that a modern-looking and minimalistic style suited this application bes
 I then created three JS files as I found it easier for me to understand if all of the parts were separated.
 
 
-My application can display today's weather and infomation such as; High and Low temperatures, Humidity, Wind Speed, Current Temperature and UV Index.
+My application can display today's weather and infomation such as; High and Low temperatures, Humidity, Wind Speed, Current Temperature, UV Index and Weather Description.
 
-My application displays a five-day forecast for the location. This forecast includes; High and Low temperatures, Humidity, Wind Speed, Current Temperature and UV Index.
+My application displays a five-day forecast for the location. This forecast includes; High and Low temperatures, Humidity, Wind Speed, Current Temperature, UV Index and Weather Description.
 
 ## Links
 

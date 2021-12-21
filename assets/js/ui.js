@@ -7,7 +7,7 @@ class Ui {
         this.city;
     }
     populateUI(data) {
-        this.uiContainer.innerHTML =       this.uiContainer.innerHTML+`
+        this.uiContainer.innerHTML = this.uiContainer.innerHTML+`
         <div class="card mx-auto mt-5" style="width: 18rem;">
             <div class="card-body justify-content-center">
                 <h5 class="card-title">${data.name}</h5>
@@ -21,16 +21,16 @@ class Ui {
     }
 
     populateCards(oneCallData) {
-        this.uiFiveday.innerHTML =  this.uiFiveday.innerHTML +`
+        this.uiFiveday.innerHTML = this.uiFiveday.innerHTML +`
         
         `
         for (let i = 1; i < 6; i++) {
             
-            this.uiFiveday.innerHTML =  this.uiFiveday.innerHTML +`
+            this.uiFiveday.innerHTML = this.uiFiveday.innerHTML +`
             <div class="card mx-auto mt-5" style="width: 18rem;">
             <div class="card-body justify-content-center">
                 <h5 class="card-title">${moment(oneCallData.daily[i].dt,"X").format("MM/DD/YYYY") }</h5>
-                <h6 class="card-subtitle mb-2 text-muted">High of ${oneCallData.daily[i].temp.max}. <br> Lows of ${oneCallData.daily[i].temp.min}.<br> Humidity is ${oneCallData.daily[i].humidity}%.<br> Wind speed of ${oneCallData.daily[i].wind_speed} MPH.<br> UVI is ${oneCallData.daily[i].uvi}.</h6>
+                <h6 class="card-subtitle mb-2 text-muted">High of ${oneCallData.daily[i].temp.max}. <br> Lows of ${oneCallData.daily[i].temp.min}.<br> Humidity is ${oneCallData.daily[i].humidity}%.<br> Wind speed of ${oneCallData.daily[i].wind_speed} MPH.<br> UVI is ${oneCallData.daily[i].uvi}.<br> Weather conditions are described as: ${oneCallData.daily[i].weather[0].description}</h6>
                 <p class="card-text"></p>
             </div>
             </div>
@@ -39,40 +39,4 @@ class Ui {
       
       
     }
-    // populateUI(data) {`
-   
-    
-    //     <div class="card mx-auto mt-5" style="width: 18rem;">
-    //         <div class="card-body justify-content-center">
-    //             <h5 class="card-title"></h5>
-    //             <h6 class="card-subtitle mb-2 text-muted"></h6>
-    //             <p class="card-text"></p>
-    //         </div>
-    //     </div>
-    //     <div class="card mx-auto mt-5" style="width: 18rem;">
-    //         <div class="card-body justify-content-center">
-    //             <h5 class="card-title"></h5>
-    //             <h6 class="card-subtitle mb-2 text-muted"></h6>
-    //             <p class="card-text"></p>
-    //         </div>
-    //     </div>
-    //     <div class="card mx-auto mt-5" style="width: 18rem;">
-    //         <div class="card-body justify-content-center">
-    //             <h5 class="card-title"></h5>
-    //             <h6 class="card-subtitle mb-2 text-muted"></h6>
-    //             <p class="card-text"></p>
-    //         </div>
-    //     </div>
-    //     <div class="card mx-auto mt-5" style="width: 18rem;">
-    //         <div class="card-body justify-content-center">
-    //             <h5 class="card-title"></h5>
-    //             <h6 class="card-subtitle mb-2 text-muted"></h6>
-    //             <p class="card-text"></p>
-    //         </div>
-    //     </div>
-    
-        
-  
-    // `
-    // }
 }
