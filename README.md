@@ -14,15 +14,10 @@ I found that a modern-looking and minimalistic style suited this application bes
 
 I then created three JS files as I found it easier for me to understand if all of the parts were separated.
 
-Fetch.js is where my fetch is.
 
-Data.js is where my data should go to after the fetch has been completed. I included my event listeners and some of the basic logic. This is also where I would have included my local storage.
+My application can display today's weather and infomation such as; High and Low temperatures, Humidity, Wind Speed, Current Temperature and UV Index.
 
-UI.js is where I put everything together using innerHTML.
-
-My application can display today's weather and some infomation such as; High and Low temperatures, humidity, wind speed and current temperature. I was not able to figure out how to get the UV index.
-
-I was also not able to get a five day forecast, although I would like to rectify this in the future when I learn more and become more comfortable with API's.
+My application displays a five-day forecast for the location. This forecast includes; High and Low temperatures, Humidity, Wind Speed, Current Temperature and UV Index.
 
 ## Links
 
@@ -34,7 +29,7 @@ I was also not able to get a five day forecast, although I would like to rectify
 
 ![GHpages1](https://user-images.githubusercontent.com/90366376/146857429-ca80aa56-52ff-4736-88db-8a797d1cb915.PNG)
 
-![GHpages2](https://user-images.githubusercontent.com/90366376/146857464-b8f5ba6e-bae1-49c6-85a9-4e6cefea929c.PNG)
+![withFiveDay](https://user-images.githubusercontent.com/90366376/146874047-b8e70d22-342f-4b4a-ab01-6a957bbbbdad.PNG)
 
 
 
