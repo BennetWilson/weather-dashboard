@@ -19,6 +19,10 @@ My application can display today's weather and infomation such as; High and Low 
 
 My application displays a five-day forecast for the location. This forecast includes; High and Low temperatures, Humidity, Wind Speed, Current Temperature, UV Index and Weather Description.
 
+My application shows a different color over the UV index on today's weather for each of the 5 warning colors.
+
+
+
 ## Links
 
 [Link to GitHub Pages](https://bennetwilson.github.io/06-homework/)
