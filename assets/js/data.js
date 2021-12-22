@@ -17,5 +17,6 @@ button.addEventListener("click", async () => {
         await ui.populateUI(data);
        await ui.populateCards(oneCallData)
         // ui.saveToLs(data);
+
     
 });
