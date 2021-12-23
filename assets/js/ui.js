@@ -4,6 +4,7 @@ class Ui {
         this.uiContainer = document.getElementById("content");
 
         this.uiFiveday= document.getElementById("fiveday");
+        
         this.city;
     }
     populateUI(data) {
@@ -19,6 +20,7 @@ class Ui {
         } else {
             uvStatus = "purple"
         }
+        this.uiContainer.innerHTML = ""
         this.uiContainer.innerHTML = this.uiContainer.innerHTML+`
         <div class="card mx-auto mt-5" style="width: 18rem;">
             <div class="card-body justify-content-center">
@@ -37,6 +39,7 @@ class Ui {
         this.uiFiveday.innerHTML = this.uiFiveday.innerHTML +`
         
         `
+        this.uiFiveday.innerHTML = "";
         for (let i = 1; i < 6; i++) {
             
             let uvStatus = "";
@@ -51,7 +54,7 @@ class Ui {
         } else {
             uvStatus = "purple"
         }
-            
+        
             this.uiFiveday.innerHTML = this.uiFiveday.innerHTML +`
             <div class="card mx-auto mt-5" style="width: 18rem;">
             <div class="card-body justify-content-center">
@@ -66,4 +69,5 @@ class Ui {
       
       
     }
+   
 }
