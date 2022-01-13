@@ -32,9 +32,7 @@ My application also shows clickable recent searches that will show data for that
 
 ## Images
 
-![GHpages1](https://user-images.githubusercontent.com/90366376/146857429-ca80aa56-52ff-4736-88db-8a797d1cb915.PNG)
-
-![withFiveDay](https://user-images.githubusercontent.com/90366376/146874047-b8e70d22-342f-4b4a-ab01-6a957bbbbdad.PNG)
+![FullyFunctional](https://user-images.githubusercontent.com/90366376/149404750-c141ca13-334b-4291-a005-0b6e2a0e8d0a.PNG)
 
 
 
