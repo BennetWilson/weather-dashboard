@@ -26,31 +26,29 @@ button.addEventListener("click", async () => {
             localStorage.setItem("cities",JSON.stringify(history) )
         }
         
-        // await populateList(history);
+        await populateList(history);
    
 
     
 }); 
-// async function  populateList(history){
-//     const currentVal = search.value;
+async function  populateList(history){
 
-//     const data = await ft.getCurrent(currentVal)
-      
-//         const oneCallData = await ft.getOneCall(data);
-//     console.log(data)
-//     let list = document.getElementById("recentSearches");
-//     list.innerHTML = "";
-//     for (let i = 0; i < history.length; i++) {
-//         list.innerHTML = list.innerHTML + `<li><button class = "historyBtn">${history[i]}</button></li>`
+    let list = document.getElementById("recentSearches");
+    list.innerHTML = "";
+    for (let i = 0; i < history.length; i++) {
+        list.innerHTML = list.innerHTML + `<li><button class = "historyBtn">${history[i]}</button></li>`
         
-//     }
-//     const historyBtn = document.querySelectorAll(".historyBtn");
-//     for (let i = 0; i < historyBtn.length; i++) {
-//         historyBtn[i].addEventListener("click", async function(event)  {
-//           await  ui.populateUI(data);
-//            await ui.populateCards(oneCallData);
-//         })
+    }
+    const historyBtn = document.querySelectorAll(".historyBtn");
+    for (let i = 0; i < historyBtn.length; i++) {
+        historyBtn[i].addEventListener("click", async function(event)  {
+            const data = await ft.getCurrent(historyBtn[i].textContent)
+            console.log(data)
+          await  ui.populateUI(data);
+          const oneCallData = await ft.getOneCall(data);
+           await ui.populateCards(oneCallData);
+        })
         
-//     }
-// }
-// populateList(history);
+    }
+}
+populateList(history);

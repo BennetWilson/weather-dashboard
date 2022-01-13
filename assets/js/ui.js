@@ -8,6 +8,7 @@ class Ui {
         this.city;
     }
     populateUI(data) {
+        console.log(data)
         let uvStatus = "";
         if (data.uvi < 3) {
             uvStatus = "green"
