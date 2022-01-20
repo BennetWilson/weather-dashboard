@@ -1,3 +1,10 @@
+body {
+    background-color: #cdcdcd;
+}
+.searchContainer {
+    background-color: #cdcdcd;
+}
+
 .red{
     background-color: red;
     color: white;

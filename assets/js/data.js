@@ -36,10 +36,10 @@ async function  populateList(history){
     let list = document.getElementById("recentSearches");
     list.innerHTML = "";
     for (let i = 0; i < history.length; i++) {
-        list.innerHTML = list.innerHTML + `<li><button class = "historyBtn">${history[i]}</button></li>`
+        list.innerHTML = list.innerHTML + `<li><button class="btn btn-outline-primary m-1" id = "historyBtn">${history[i]}</button></li>`
         
     }
-    const historyBtn = document.querySelectorAll(".historyBtn");
+    const historyBtn = document.querySelectorAll("#historyBtn");
     for (let i = 0; i < historyBtn.length; i++) {
         historyBtn[i].addEventListener("click", async function(event)  {
             const data = await ft.getCurrent(historyBtn[i].textContent)
